@@ -1,5 +1,2 @@
-# VRshooting2023
-hello world
-aaaaaa
-b
-87
+# KouryoProcon-2023
+工陵祭でのプロコンの企画を紹介したページです
