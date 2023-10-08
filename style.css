@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*
+    CSSプロパティはアルファベット順です
+*/
+
+/*
+    ブレイクポイント
+    ・sp:無し
+    ・tab:600px
+    ・pc:1200px
+*/
+
+* {
+    margin: unset;
+    padding: unset;
+}
