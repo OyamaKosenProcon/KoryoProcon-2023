@@ -70,6 +70,34 @@ section {
     height: 100vh;
     width: 100%;
 }
+.localnav {
+    bottom: 30px;
+    left: 30px;
+    position: absolute;
+
+    .localnav-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        margin: unset;
+    }
+
+    .localnav-list {
+        margin: unset;
+        padding: 0 0 0 1em;
+
+        .localnav-list__item {
+            list-style: none;
+        }
+
+        .localnav-list__link {
+            color: black;
+        }
+
+        .localnav-list__text {
+            color: black;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+    }
+}
 
 .wrapper {
     padding: 20px;
