@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/*
+    font-family: 'Noto Sans JP', sans-serif; font-weight: 400,500,700
+*/
+
 /*
     CSSプロパティはアルファベット順です
 */
@@ -11,7 +17,159 @@
     ・pc:1200px
 */
 
-* {
+/* タグ */
+body {
     margin: unset;
-    padding: unset;
+}
+section {
+    background: black;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+/* ナビゲーション */
+.nav {
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: space-around;
+    position: fixed;
+    right: 30px;
+    width: 60px;
+
+    .nav-link {
+        background: gray;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+        justify-content: center;
+        text-decoration: none;
+        width: 60px;
+
+        .nav-link__icon {
+            color: black;
+            display: block;
+            font-size: 30px;
+            margin: 0 auto;
+        }
+
+        .nav-link__text {
+            color: black;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* トップ */
+.top {
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper {
+    padding: 20px;
+}
+.title {
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    margin: unset;
+    padding: 20px 0 10px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    @media (width >= 800px) {
+        flex-direction: unset;
+        padding: 50px 20px;
+    }
+}
+.container-second {
+    display: flex;
+    flex-direction: column-reverse;
+    @media (width >= 800px) {
+        flex-direction: unset;
+        padding: 50px 20px;
+    }
+}
+.letter {
+    padding: 20px;
+    @media (width >= 800px) {
+        width: 50%;
+    }
+}
+.letter-sentence {
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: unset;
+    overflow-wrap: break-word;
+}
+.letter-list {
+    margin: 1em 0 0 0;
+}
+.letter-list__item {
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.figure {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    @media (width >= 800px) {
+        width: 50%;
+    }
+}
+.figure-image {
+    width: 100%;
+}
+
+/* フッター */
+.footer {
+    background: black;
+    height: 110px;
+    width: 100%;
+
+    .footer-sns {
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 150px;
+
+        .footer-sns__link {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-sns__image {
+            height: 50px;
+            width: 50px;
+        }
+
+        .footer-sns__text {
+            color: white;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 10px;
+            height: 12px;
+            text-align: center;
+            width: 50px;
+        }
+    }
+
+    .footer-copyright {
+        color: white;
+        display: block;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 14px;
+        height: 20px;
+        text-align: center;
+        width: 100%;
+    }
 }
