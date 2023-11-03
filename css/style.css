@@ -67,13 +67,26 @@ section {
 
 /* トップ */
 .top {
+    display: flex;
     height: 100vh;
     width: 100%;
+    justify-content: center;
+
+    .top-image_container {
+        height: 100%;
+        width: 100%;
+        background-image: url(../image/poster.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
 }
 .localnav {
+    background: rgba(255,244,0,0.5);
     bottom: 30px;
     left: 30px;
     position: absolute;
+    display: inline-block;
 
     .localnav-title {
         font-family: 'Noto Sans JP', sans-serif;
