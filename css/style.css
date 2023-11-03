@@ -135,6 +135,7 @@ section {
 }
 .letter-sentence {
     color: white;
+    font-size: 30px;
     font-family: 'Noto Sans JP', sans-serif;
     margin: unset;
     overflow-wrap: break-word;
